@@ -24,11 +24,11 @@ If you don't have python, you can use the executable provided (created with cx_f
 
 The script is expecting a CSV file with the first row containing columns that correspond to the PFIF standard. Here are the basic person entities supported:
 
+	full_name	(REQUIRED)
 	source_name
 	source_date
 	source_url
 	first_name
-	last_name
 	last_name
 	sex
 	date_of_birth
@@ -41,6 +41,20 @@ The script is expecting a CSV file with the first row containing columns that co
 	home_country
 	photo_url
 	other
+
+## Troubleshooting
+
+The tool requires the following
+
+*	An internet connection to upload
+*	A filled in config file
+*	A CSV that contains at least full_name
+
+The script outputs the XML file it is sending and the response it gets back from the server. Some troubleshooting steps:
+
+*	Check the XML file. Compare it to the example [here](http://zesty.ca/pfif/1.2/pfif-1.2-example.html). If the values in the CSV contain non-supported characters, that could be the problem.
+
+*	Check the response from the server. Details on what that response means can be found [here](http://code.google.com/p/googlepersonfinder/wiki/DataAPI) in the "Uploading data into Person Finder" section.
 
 ## Issues
 
