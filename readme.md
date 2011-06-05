@@ -41,3 +41,7 @@ The script is expecting a CSV file with the first row containing columns that co
 	home_country
 	photo_url
 	other
+
+## Issues
+
+Because of the nature of the executable creator (cx_Freeze), I was unable to get an x64 version working for Windows.
